@@ -11,6 +11,8 @@ gem 'jsbundling-rails'
 gem 'turbolinks', '~> 5'
 gem "stimulus-rails"
 gem "turbo-rails"
+gem "mini_magick"
+gem 'carrierwave'
 gem 'rails-i18n'
 gem 'devise'
 gem 'activeadmin'
