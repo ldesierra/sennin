@@ -1,0 +1,23 @@
+{
+  "name": "rails_template",
+  "private": true,
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --outdir=app/assets/builds",
+    "build:css": "sass ./app/assets/stylesheets/application.bootstrap.scss:./app/assets/builds/application.css --no-source-map --load-path=node_modules"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "3.1.0",
+    "@hotwired/turbo-rails": "7.2.0-rc.1",
+    "@popperjs/core": "2.11.5",
+    "@rails/ujs": "^7.0.3-1",
+    "bootstrap": "5.2.0",
+    "sass": "1.54.3"
+  },
+  "devDependencies": {
+    "esbuild": "0.14.53",
+    "eslint": "8.21.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "prettier": "2.7.1"
+  }
+}
